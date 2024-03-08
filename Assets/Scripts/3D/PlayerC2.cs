@@ -9,6 +9,7 @@ public class PlayerC2 : MonoBehaviour
 	public bool isGrounded;
 	public float jumpForce;
 	public bool IsStatic;
+	public Storage st;
 	
 	public float rotationY = 0f;
 	
@@ -38,6 +39,7 @@ public class PlayerC2 : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody>();
 		LockCursor();
+		transform.position = st.PlayerPos3D;
 		//Gm = GameObject.FindGameObjectWithTag("Respawn").GetComponent<GameManager>();
 	}
 

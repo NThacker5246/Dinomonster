@@ -5,12 +5,13 @@ using UnityEngine;
 public class PlayerC2D : MonoBehaviour
 {
 	public float speed;
+	public Storage st;
 	public Rigidbody2D rb;
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		
+		transform.position = new Vector3(st.PlayerPos2D.x, st.PlayerPos2D.y, this.transform.position.z);
 	}
 
 	// Update is called once per frame

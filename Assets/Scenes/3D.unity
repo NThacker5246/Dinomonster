@@ -3213,6 +3213,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2029909715}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1001222219}
         m_TargetAssemblyTypeName: Fade, Assembly-CSharp
         m_MethodName: FadeToLevel
@@ -4341,6 +4353,7 @@ MonoBehaviour:
   isGrounded: 1
   jumpForce: 5
   IsStatic: 0
+  st: {fileID: 11400000, guid: 536c41a970348914f8dcf3d57edd44bb, type: 2}
   rotationY: 0
   mouseSensitivity: 100
 --- !u!54 &1691213278
@@ -5039,6 +5052,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2029909710}
+  player: {fileID: 1691213276}
+  Dementions: 3
+  st: {fileID: 11400000, guid: 536c41a970348914f8dcf3d57edd44bb, type: 2}
 --- !u!1 &2032617017
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,6 +10,14 @@ public class Shop : MonoBehaviour
 	public Fade fade2;
 	public int hot;
 
+	private void Start(){
+		int j = 0;
+		foreach(Island island in islands){
+			island.isBoutght = storage.isBoughtIsland[j];
+			j += 1;
+		}
+	}
+
 	public void get(int i) {
 		Island current = islands[i];
 		Debug.Log(i);
@@ -25,6 +33,8 @@ public class Shop : MonoBehaviour
 		} else {
 			Debug.Log("Ты уже давно это купил");
 		}
+
+		storage.isBoughtIsland[i] = current.isBoutght;
 	}
 
 	public void Is1(){

@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Script
   m_EditorClassIdentifier: 
   island: 0
-  Coins: 997000
+  Coins: 996000
   Eggs: 101
+  PlayerPos3D: {x: 0.00000009109389, y: 1.0000001, z: 1.0883102e-12}
+  PlayerPos2D: {x: 0, y: 0}
+  isBoughtIsland: 0101
